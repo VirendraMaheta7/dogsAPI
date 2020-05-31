@@ -1,0 +1,8 @@
+<div class="row">
+    <div class="col-sm-12">
+        <div class="alert alert-success" *ngFor="let fact of lstCatFacts; let i = index;" role="alert">
+            <h4 class="alert-heading">Fact {{i+1}}</h4>
+            <p>{{fact?.text}}</p>
+         </div>
+    </div>
+</div>

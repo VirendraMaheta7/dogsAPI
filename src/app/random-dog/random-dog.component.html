@@ -1,0 +1,5 @@
+ <div *ngIf="randomDogObj?.message">
+     <img [src]="randomDogObj?.message" height="350px" width="350px" alt=""><br>
+     <button class="btn btn-primary mt-1 btn-sm" (click)="getRandomDog()">Change Image</button>
+     <button class="btn btn-link ml-1" (click)="downloadImage(randomDogObj?.message)">Download</button>
+ </div>
